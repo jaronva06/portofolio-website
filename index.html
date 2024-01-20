@@ -1,7 +1,358 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with Github Pages.</p>
+    <nav id="desktop-nav">
+        <div class="logo">Jaron Vincent Aulia</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Jaron Vincent Aulia</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="/assets/profile-pic-1.png" alt="Jaron Vincent Aulia Profile Picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Jaron Vincent Aulia</h1>
+            <p class="section__text__p2">Product Manager</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Resume-Jaron-Vincent-Aulia.pdf')">
+                Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" 
+                alt="My LinkedIn Profile" 
+                class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/jaronvincent/'"
+                />
+                <img src="./assets/github.png" 
+                alt="My Github Profile" 
+                class="icon" 
+                onclick="location.href='https://github.com/jaronva06'"
+                />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" 
+                alt="Profile Picture"     
+                class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" 
+                        alt="Experience Icon" 
+                        class="icon">
+                        <h3>Experience</h3>
+                        <p>6 months <br>Product Owner</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" 
+                        alt="Education Icon" 
+                        class="icon">
+                        <h3>Education</h3>
+                        <p>Bachelor of Computer Science <br>Tarumanagara University</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Hello, I'm Jaron, a Product Management enthusiast, ignited by a consistent drive for innovation and adept at leveraging data-driven insights. I'm eager to collaboratively craft impactful and meaningful products with you :)  
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+             alt="Arrow Icon" 
+             class="icon arrow" 
+             onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Project Management Tools</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/jira.png" 
+                                 alt="Jira Icon"
+                                 class="icon">
+                            <div>
+                                <h3>Jira</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/trello.png" 
+                                 alt="Trello Icon"
+                                 class="icon">
+                            <div>
+                                <h3>Trello</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/notion.png" 
+                                 alt="Notion Icon"
+                                 class="icon">
+                            <div>
+                                <h3>Notion</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/miro.png" 
+                                 alt="Miro Icon"
+                                 class="icon">
+                            <div>
+                                <h3>Miro</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Wireframe & Prototyping</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/figma.png" 
+                                 alt="Figma Icon"
+                                 class="icon">
+                            <div>
+                                <h3>Figma</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/canva.png" 
+                                 alt="Canva Icon"
+                                 class="icon">
+                            <div>
+                                <h3>Canva</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/whimsical.png" 
+                                 alt="Whimsical Icon"
+                                 class="icon">
+                            <div>
+                                <h3>Whimsical</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/drawio.png" 
+                                 alt="draw.io Icon"
+                                 class="icon">
+                            <div>
+                                <h3>draw.io</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Data</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/excel.png" 
+                                 alt="Excel Icon"
+                                 class="icon">
+                            <div>
+                                <h3>Excel</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/power bi.png" 
+                                 alt="Power BI Icon"
+                                 class="icon">
+                            <div>
+                                <h3>Power BI</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/lookerstudio.png" 
+                                 alt="Looker Studio Icon"
+                                 class="icon">
+                            <div>
+                                <h3>Looker Studio</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/amplitude.png" 
+                                 alt="Amplitude Icon"
+                                 class="icon">
+                            <div>
+                                <h3>Amplitude</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Communication</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/slack.png" 
+                                 alt="Slack Icon"
+                                 class="icon">
+                            <div>
+                                <h3>Slack</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/discord.png" 
+                                 alt="Discord Icon"
+                                 class="icon">
+                            <div>
+                                <h3>Discord</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/mattermost.png" 
+                                 alt="MattermostIcon"
+                                 class="icon">
+                            <div>
+                                <h3>Mattermost</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+             alt="Arrow Icon" 
+             class="icon arrow" 
+             onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-1.png" 
+                    alt="Project 1" 
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Portofolio Website</h2>
+                <p class="experience-sub-body">Portofolio Website that i build from scratch</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/jaronva06/portofolio_website'">
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://jaronva06.github.io/portofolio-website/'">
+                        Live Demo
+                    </button>
+                </div>
+                </div>
+                <div class="details-container color-container">
+                <div class="article-container">
+                     <img src="./assets/project-2.png" 
+                      alt="Project 2" 
+                       class="project-img">
+                  </div>
+                  <h2 class="experience-sub-title project-title">CATARINA</h2>
+                  <p class="experience-sub-body">Talent Management Application</p>
+                  <div class="btn-container">
+                       <button class="btn btn-color-2 project-btn" onclick="">
+                         Github
+                       </button>
+                    <button class="btn btn-color-2 project-btn" onclick="">
+                        Live Demo
+                     </button>
+                 </div>
+                </div>
+                <div class="details-container color-container">
+                 <div class="article-container">
+                    <img src="./assets/project-3.png" 
+                    alt="Project 3" 
+                     class="project-img">
+                 </div>
+                 <h2 class="experience-sub-title project-title">Landing Page Delisi</h2>
+                 <p class="experience-sub-body">Landing Page Website for Delisi Company</p>
+                  <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/jaronva06/delisifood'">
+                           Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://jaronva06.github.io/delisifood/'">
+                           Live Demo
+                       </button>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+             alt="Arrow Icon" 
+             class="icon arrow" 
+             onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                    src="./assets/email.png" 
+                    alt="Email icon" 
+                    class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:auliajaron@gmail.com">auliajaron@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                    src="./assets/linkedin.png" 
+                    alt="LinkedIn icon" 
+                    class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com/in/jaronvincent/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Jaron Vincent. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
